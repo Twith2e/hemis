@@ -10,6 +10,8 @@
 }
 
 body {
+  font-family: "muli", sans-serif;
+  font-size: 18px;
   height: 100vh;
   width: 100%;
 }
@@ -18,25 +20,26 @@ nav {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  padding-inline: 20px;
 }
 
 header {
-  background-color: navy;
+  background-color: #030e22;
   height: fit-content;
   right: 0;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 2;
 }
 
 main {
   color: #fff;
-  font-family: "muli", sans-serif;
   margin-top: 100px;
 }
 
 a {
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 
@@ -44,16 +47,19 @@ li {
   list-style: none;
 }
 
-section,
-footer {
-  color: blue;
+section {
+  color: #435162;
   padding: 20px;
 }
 
 footer {
-  background-color: red;
+  background-color: #030e22;
+  color: white;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  padding: 15px;
 }
 
 .menu-btn {
@@ -61,7 +67,8 @@ footer {
 }
 
 .sidebar {
-  background-color: rgba(44, 44, 138, 0.637);
+  background-color: rgb(101, 101, 173);
+  font-size: 16px;
   height: 100vh;
   padding: 10px;
   position: absolute;
@@ -92,7 +99,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-  height: 55vh;
+  height: 60vh;
   position: relative;
   z-index: -1;
 }
@@ -112,9 +119,15 @@ footer {
   padding: 10px 20px;
 }
 
-.getstarted {
-  background-color: burlywood;
+.getstarted,
+.aboutus {
+  background-color: #075d70;
 }
+
+/* .getstarted a,
+.aboutus a {
+  color: white;
+} */
 
 .learnmore {
   border: 1px solid #fff;
@@ -141,19 +154,17 @@ footer {
 }
 
 .empty-div {
-  border-bottom: 3px solid blue;
+  border-bottom: 3px solid #030e22;
   width: 20%;
 }
 
 .aboutus {
-  background-color: blue;
-  color: white;
   padding: 10px 20px;
   width: fit-content;
 }
 
 .section-four {
-  background-color: burlywood;
+  background-color: #f8faff;
   padding: 20px;
 }
 
@@ -171,7 +182,7 @@ footer {
 }
 
 .banner-link {
-  color: blue;
+  color: #030e22;
 }
 
 .secfour-grid {
@@ -199,13 +210,70 @@ footer {
 .contact {
   align-items: center;
   background-color: white;
-  box-shadow: 0.5px 0.5px 10px grey;
+  box-shadow: 0.5px 0.5px 10px rgb(222, 220, 220);
   display: flex;
   gap: 25px;
-  padding: 20px;
+  height: 100%;
+  padding: 10px 10px 90px 10px;
 }
 
 .footer-links {
   display: flex;
   justify-content: space-between;
+}
+
+.footer-list-wrapper li {
+  color: #435162;
+  font-size: 15px;
+  line-height: 24px;
+  padding-block: 20px;
+}
+
+footer a {
+  color: #435162;
+}
+
+footer a:hover {
+  color: #075d70;
+}
+
+.flink {
+  width: 100%;
+}
+
+.sub-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.sub-contact h4 {
+  font-size: 20px;
+}
+
+.c-flink-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.c-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-to-top {
+  align-items: center;
+  background-color: #075d70;
+  border-radius: 50%;
+  bottom: 50px;
+  display: inline-flex;
+  font-size: 18px;
+  height: 3em;
+  justify-content: center;
+  position: fixed;
+  right: 30px;
+  visibility: hidden;
+  width: 3em;
 }
