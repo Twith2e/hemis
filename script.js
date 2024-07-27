@@ -12,7 +12,7 @@ sideBarCloseBtn.addEventListener("click", () => {
 
 let lastScrollTop = 0;
 
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", () => {
   let currentScrollTop = document.documentElement.scrollTop;
 
   if (currentScrollTop > lastScrollTop) {

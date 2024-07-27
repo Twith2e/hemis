@@ -1,0 +1,47 @@
+.contact-sect,
+.cs-head-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+a:hover {
+  color: pink;
+}
+
+.contact-sect {
+  background: #ccc;
+}
+
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+form button {
+  background: #075d70;
+  border: none;
+  color: white;
+  padding: 13px 23px;
+  width: fit-content;
+}
+
+input,
+textarea {
+  border: none;
+  border-radius: 3px;
+  outline-color: rgb(157, 157, 197);
+  padding: 20px;
+  width: 100%;
+}
+
+input,
+textarea {
+  background: rgba(157, 157, 197, 0.29);
+}
+
+textarea {
+  height: 150px;
+}
