@@ -1,6 +1,15 @@
 const menuBtn = document.getElementById("menu-btn");
 const sideBar = document.getElementById("sidebar");
 const sideBarCloseBtn = document.getElementById("sb-c-Btn");
+const webLogo = document.getElementById("logo");
+
+webLogo.addEventListener("click", () => {
+  location.replace("index.html");
+});
+
+// document.getElementById("backHome").addEventListener("click", () => {
+//   location.href = "services.html";
+// });
 
 menuBtn.addEventListener("click", () => {
   sideBar.style.right = "0";

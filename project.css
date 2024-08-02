@@ -1,0 +1,42 @@
+.projects-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 100%;
+}
+
+.project-banner {
+  border-radius: 5px;
+  color: #2b3b56;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+.project-banner a {
+  color: #7c858f;
+  transition: color 0.3s;
+  width: fit-content;
+}
+
+.project-banner a:hover {
+  color: #075d70;
+}
+
+.project-banner div {
+  border-bottom: 1px solid #e6e8eb;
+  border-inline: 1px solid #e6e8eb;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: space-between;
+  line-height: 30px;
+  padding: 30px 20px;
+}
+
+.project-banner img {
+  border-radius: 5px 5px 0 0;
+  height: 50%;
+  object-fit: cover;
+  width: 100%;
+}

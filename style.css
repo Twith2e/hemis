@@ -12,6 +12,10 @@
   --height: 100px;
 }
 
+::placeholder {
+  font-size: 16px;
+}
+
 p {
   font-family: muli-light;
 }
@@ -86,13 +90,14 @@ footer {
 }
 
 .sidebar {
-  background-color: rgb(101, 101, 173);
+  background-color: #677285;
   font-size: 16px;
   height: 100vh;
   padding: 10px;
   position: absolute;
   right: -100%;
   top: 0;
+  transition: 0.5s;
   width: 80%;
 }
 
@@ -107,7 +112,7 @@ footer {
 }
 
 .sidebar-list {
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #030e22;
   padding-block: 25px;
 }
 
@@ -131,14 +136,19 @@ footer {
 }
 
 .cso-head {
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
+.cso-head h4 {
+  line-height: 30px;
+}
+
 .cso-body {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 .cso-head h4 {
@@ -163,6 +173,26 @@ footer {
 
 .secone-link {
   padding: 10px 20px;
+}
+
+.contact-link a {
+  color: #fff;
+}
+
+.contact-link:hover {
+  background-color: #fff;
+}
+
+.contact-link:hover a {
+  color: #075d70;
+}
+
+.contact-link {
+  background-color: #075d70;
+  border: 1px solid #075d70;
+  padding: 8px 10px;
+  transition: all 0.3s;
+  width: fit-content;
 }
 
 .getstarted,
@@ -194,6 +224,13 @@ footer {
   gap: 5px;
 }
 
+.sec-text-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .empty-div {
   border-bottom: 3px solid #030e22;
   width: 20%;
@@ -207,6 +244,11 @@ footer {
 .section-four {
   background-color: #f8faff;
   padding: 20px;
+}
+
+.section-six {
+  background: #98a5b3;
+  color: #fff;
 }
 
 .banner {
@@ -290,6 +332,16 @@ footer a:hover {
 
 .flink {
   width: 100%;
+}
+
+.socials {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.social svg:hover {
+  fill: #075d70;
 }
 
 .sub-contact {
