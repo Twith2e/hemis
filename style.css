@@ -416,17 +416,18 @@ footer {
 }
 
 .footer-list-wrapper li {
-  color: #435162;
+  color: #fff;
   font-size: 15px;
   line-height: 24px;
 }
 
 footer a {
-  color: #435162;
+  color: #fff;
 }
 
 footer a:hover {
   color: #075d70;
+  text-decoration: underline;
 }
 
 .flink {
