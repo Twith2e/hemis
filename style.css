@@ -100,7 +100,7 @@ footer {
 }
 
 .sidebar {
-  background-color: #677285;
+  background-color: #e5e5e5;
   font-size: 16px;
   height: 100vh;
   padding: 10px;
@@ -123,7 +123,12 @@ footer {
 
 .sidebar-list {
   border-bottom: 1px solid #030e22;
+  color: #075d70;
   padding-block: 25px;
+}
+
+.sidebar-header svg {
+  fill: #030e22;
 }
 
 .section-one,
@@ -397,10 +402,17 @@ footer {
   background-color: #fff;
   box-shadow: 0.5px 0.5px 10px rgb(222, 220, 220);
   display: flex;
-  gap: 5px;
+  font-size: 14px;
+  gap: 20px;
   height: 100%;
-  padding: 10px;
+  padding: 10px 30px;
   width: 100%;
+}
+
+.contact img,
+.contact svg {
+  height: 40px;
+  width: 40px;
 }
 
 .footer-links {
@@ -452,7 +464,7 @@ footer a:hover {
 }
 
 .sub-contact h4 {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .c-flink-wrapper {
@@ -559,6 +571,10 @@ footer a:hover {
     width: 40%;
   }
 
+  .sidebar-list {
+    font-size: 24px;
+  }
+
   .c-flink-wrapper,
   footer {
     align-items: center;
@@ -590,11 +606,39 @@ footer a:hover {
   .nav-links {
     display: none;
   }
+
+  .sub-contact h4 {
+    font-size: 20px;
+  }
+
+  .contact {
+    font-size: 18px;
+  }
+
+  .contact img,
+  .contact svg {
+    height: 60px;
+    width: 60px;
+  }
 }
 
 @media (min-width: 1056px) {
   .menu-btn {
     display: none;
+  }
+
+  .sub-contact h4 {
+    font-size: 20px;
+  }
+
+  .contact {
+    font-size: 18px;
+  }
+
+  .contact img,
+  .contact svg {
+    height: 60px;
+    width: 60px;
   }
 
   .section-one {
