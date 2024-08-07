@@ -45,3 +45,19 @@ textarea {
 textarea {
   height: 150px;
 }
+
+.contact-input {
+  width: 100%;
+}
+
+.mail,
+.usersname,
+.subject,
+.message {
+  position: relative;
+}
+
+#error {
+  bottom: 0;
+  position: absolute;
+}

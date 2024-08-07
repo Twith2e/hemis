@@ -9,7 +9,8 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Bolts and Beams</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Bolt and Beams</title>
   </head>
   <body>
     <header>
@@ -21,20 +22,42 @@
             alt="b-and-b-logo"
           />
         </div>
-        <div class="menu-btn" id="menu-btn">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            x="0px"
-            y="0px"
-            width="40"
-            height="40"
-            viewBox="0 0 50 50"
-            fill="#fff"
-          >
-            <path
-              d="M 3 9 A 1.0001 1.0001 0 1 0 3 11 L 47 11 A 1.0001 1.0001 0 1 0 47 9 L 3 9 z M 3 24 A 1.0001 1.0001 0 1 0 3 26 L 47 26 A 1.0001 1.0001 0 1 0 47 24 L 3 24 z M 3 39 A 1.0001 1.0001 0 1 0 3 41 L 47 41 A 1.0001 1.0001 0 1 0 47 39 L 3 39 z"
-            ></path>
-          </svg>
+
+        <div class="nav-links">
+          <a class="nav-link" href="index.html">HOME</a>
+          <a class="nav-link" href="services.html">SERVICES</a>
+          <a class="nav-link" href="projects.html">PROJECTS</a>
+          <a class="nav-link" href="contact.html">CONTACT US</a>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+          "
+        >
+          <div class="contactUs-btn">
+            <button>
+              <a href="contact.html">Consult Now</a>
+            </button>
+          </div>
+          <div class="menu-btn" id="menu-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="40"
+              height="40"
+              viewBox="0 0 50 50"
+              fill="#fff"
+            >
+              <path
+                d="M 3 9 A 1.0001 1.0001 0 1 0 3 11 L 47 11 A 1.0001 1.0001 0 1 0 47 9 L 3 9 z M 3 24 A 1.0001 1.0001 0 1 0 3 26 L 47 26 A 1.0001 1.0001 0 1 0 47 24 L 3 24 z M 3 39 A 1.0001 1.0001 0 1 0 3 41 L 47 41 A 1.0001 1.0001 0 1 0 47 39 L 3 39 z"
+              ></path>
+            </svg>
+          </div>
         </div>
       </nav>
       <div class="sidebar" id="sidebar">
@@ -73,153 +96,167 @@
     </header>
     <main>
       <section class="section-one">
-        <img
-          class="slider left-slider"
-          src="assets/icons8-chevron-left-25.png"
-          alt=""
-        /><img
-          class="slider right-slider"
-          src="assets/icons8-chevron-right-26.png"
-          alt=""
-        />
-        <div class="secone-text">
-          <h1>Structural Engineering</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            corporis aut quaerat dignissimos reprehenderit soluta, nihil
-            molestiae provident amet inventore vel voluptate, ad cumque,
-            officiis eum ipsum! Nisi molestiae beatae minus placeat, pariatur
-            similique dolores ea temporibus qui provident eaque omnis odio
-            consequuntur repudiandae accusantium. Architecto fuga quisquam nobis
-            culpa?
-          </p>
-          <div class="secone-btn-wrapper">
-            <div class="secone-link getstarted"><a href="">Get Started</a></div>
-            <div class="secone-link learnmore"><a href="">Learn More</a></div>
+        <div class="carousel-slide">
+          <div class="slide">
+            <h2>Design Build</h2>
+            <p>
+              We offer integrated planning, innovative design, and seamless
+              construction. Our efficient solutions ensure projects run smoothly
+              from concept to completion
+            </p>
+            <div class="secone-btn-wrapper">
+              <div class="secone-link getstarted">
+                <a href="#sectionTwo">Get Started</a>
+              </div>
+              <div class="secone-link learnmore">
+                <a href="projects.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <h2>General Contracting</h2>
+            <p>
+              Comprehensive management from start to finish. Ensuring projects
+              are completed on time and within budget.
+            </p>
+            <div class="secone-btn-wrapper">
+              <div class="secone-link getstarted">
+                <a href="#sectionTwo">Get Started</a>
+              </div>
+              <div class="secone-link learnmore">
+                <a href="projects.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <h2>Renovations and Remodeling</h2>
+            <p>
+              We transform spaces with innovative designs, ensuring
+              functionality and style. Our team revitalizes interiors, creating
+              environments that inspire.
+            </p>
+            <div class="secone-btn-wrapper">
+              <div class="secone-link getstarted">
+                <a href="#sectionTwo">Get Started</a>
+              </div>
+              <div class="secone-link learnmore">
+                <a href="projects.html">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-control prev">❮</button>
+            <button class="carousel-control next">❯</button>
           </div>
         </div>
       </section>
-      <section class="section-two">
-        <div>
-          <h1>Welcome to Bolts and Beams</h1>
+      <section class="section-two index-secttwo" id="sectionTwo">
+        <div class="sec-text-wrapper">
+          <h1>Welcome to Bolt and Beams</h1>
           <p>We aim to provide cutting-edge construction services</p>
         </div>
       </section>
-      <section class="section-three">
+      <section
+        class="section-three"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
         <div class="sec-text-wrapper">
-          <div class="secthree-intro">
+          <div class="secthree-intro pad">
             <div class="empty-div"></div>
             <p>Experience you can count on</p>
           </div>
-          <h2>We Provide the Best Service in Industry</h2>
-          <p>
+          <h2 class="fz">We Provide the Best Service in Industry</h2>
+          <p class="pad">
             Bolt & Beams is a small construction company, based in Abuja,
             Nigeria. It was founded in 2023. We work to provide our clientele
             with safe and aesthetic buildings. We are a team that demonstrates
             our values of honesty, efficiency, and safety by our work. How we
             construct our buildings is just as important as the building itself
-            - best practices produce the best results.
+            - best practices produce the best results.
           </p>
-          <!-- <div class="aboutus">
-            <a href="">About Us</a>
-          </div> -->
         </div>
       </section>
       <section class="section-four">
-        <div
-          class="sec-text-wrapper"
-          style="text-align: center; width: 90%; margin: auto"
-        >
+        <div class="sec-text-wrapper pad">
           <h2>We create a unique action plan for brands</h2>
+          <p class="pad">
+            Bolt and Beams consultants have earned a reputation for proven
+            results in structural engineering. Our focus is on quality,
+            constructability, and cost-effectiveness.
+          </p>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem porro
-          temporibus vel.
-        </p>
-        <div class="secfour-grid">
-          <div class="banner">
-            <div>
+
+        <div class="secfour-grid" data-aos="fade-up" data-aos-duration="2000">
+          <div class="banner" id="designBuild">
+            <div class="banner-head">
               <img
                 height="60px"
                 width="60px"
                 src="assets/icons8-crane-24.png"
                 alt="crane"
               />
+              <h1>Design Build</h1>
             </div>
-            <h1>Site Preparation</h1>
             <p class="banner-paragraph">
-              Clearing and levelling for building construction
+              We offer integrated planning, innovative design, and seamless
+              construction. Our efficient solutions ensure projects run smoothly
+              from concept to completion
             </p>
-            <a class="banner-link" href="">Learn More</a>
+            <a class="banner-link" href="services.html">Learn More</a>
           </div>
-          <div class="banner">
-            <div>
+          <div class="banner" id="genContract">
+            <div class="banner-head">
               <img
                 height="60px"
                 width="60px"
                 src="assets/icons8-architechture-24.png"
                 alt="archi"
               />
+              <h1>General Contracting</h1>
             </div>
-            <h1>Structural Work</h1>
-            <p class="banner-paragraph">Residential and commercial buildings</p>
-            <a href="" class="banner-link">Learn More</a>
-          </div>
-          <div class="banner">
-            <div>
-              <img src="assets/icons8-project-management-60.png" alt="pmt" />
-            </div>
-            <h1>Project Management</h1>
-            <p class="banner-paragraph">Homes, offices, and hotels</p>
-            <a href="" class="banner-link">Learn More</a>
-          </div>
-          <div class="banner">
-            <div>
-              <img src="assets/" alt="Structural Audit and Documentation" />
-            </div>
-            <h1>Design Consultation</h1>
-            <p class="banner-paragraph">Homes, offices, and hotels</p>
-            <a href="" class="banner-link">Learn More</a>
-          </div>
-          <div class="banner">
-            <div>
-              <img src="assets/icons8-disconnected-60.png" alt="socket" />
-            </div>
-            <h1>Electrical and Plumbing</h1>
             <p class="banner-paragraph">
-              Installation, repair, and maintenance
+              Comprehensive management from start to finish. Ensuring projects
+              are completed on time and within budget.
             </p>
-            <a href="" class="banner-link">Learn More</a>
+            <a href="services.html" class="banner-link">Learn More</a>
           </div>
-          <div class="banner">
-            <div><img src="assets/icons8-living-room-60.png" alt="" /></div>
-            <h1>Interior Design</h1>
-            <p class="banner-paragraph" style="width: 70%; margin: auto">
-              Homes, offices, and hotels
+          <div class="banner" id="renRemod">
+            <div class="banner-head">
+              <img src="assets/icons8-disconnected-60.png" alt="socket" />
+              <h1>Renovations and Remodeling</h1>
+            </div>
+            <p class="banner-paragraph">
+              We transform spaces with innovative designs, ensuring
+              functionality and style. Our team revitalizes interiors, creating
+              environments that inspire.
             </p>
-            <a href="" class="banner-link">Learn More</a>
+            <a href="services.html" class="banner-link">Learn More</a>
           </div>
         </div>
       </section>
       <section class="section-five">
         <div class="sec-text-wrapper">
-          <div class="secfive-intro">
+          <div
+            class="secfive-intro"
+            style="display: flex; justify-content: center"
+          >
             <div class="empty-div"></div>
             <span>Getting Things Built</span>
           </div>
           <h1>Achieve your goals by finding the best solutions</h1>
           <ul class="secfive-list-wrapper">
-            <li>Service</li>
-            <li>Strength</li>
-            <li>Safety</li>
-            <li>Support</li>
+            <li data-aos="fade-up" data-aos-duration="1000">Service</li>
+            <li data-aos="fade-up" data-aos-duration="1000">Strength</li>
+            <li data-aos="fade-up" data-aos-duration="1000">Safety</li>
+            <li data-aos="fade-up" data-aos-duration="1000">Support</li>
           </ul>
         </div>
       </section>
       <section class="section-six">
         <div class="sec-text-wrapper">
           <h1>Let's work together</h1>
-          <p>
+          <p class="pad">
             We are all about working together to solve problems, serve our
             clients, and bring their big dreams to life. If that sounds like
             your thing too, contact us.
@@ -230,8 +267,8 @@
       <section class="section-seven">
         <div class="sec-text-wrapper">
           <h1>Team. Tools. Safety. Solution</h1>
-          <p>
-            Bolts and Beams is a team of creative and practical problem solvers
+          <p class="pad">
+            Bolt and Beams is a team of creative and practical problem solvers
             with 20+ industry experience amongst them committed to providing
             industry-leading structural consulting services on projects of all
             sizes with the aid of industry standard tools. We take great pride
@@ -240,11 +277,12 @@
             project inception to ensure that critical structural decisions are
             made early to improve building design, reduce construction costs,
             and bring projects to life while also considering safety by adhering
-            to the OSHA standards.
+            to the Occupational Safety and Health Administration(OSHA)
+            standards.
           </p>
         </div>
         <div class="secseven-grid">
-          <div class="contact">
+          <div class="contact" data-aos="fade-up" data-aos-duration="1000">
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -263,7 +301,7 @@
               <span>Suite 3011, Kingfem Plaza, GA247, Mabushi, Abuja</span>
             </div>
           </div>
-          <div class="contact">
+          <div class="contact" data-aos="fade-up" data-aos-duration="1300">
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -282,7 +320,7 @@
               <p>+234 806 408 1239</p>
             </div>
           </div>
-          <div class="contact">
+          <div class="contact" data-aos="fade-up" data-aos-duration="1500">
             <div>
               <img src="assets/icons8-open-mail-60.png" alt="open-mail" />
             </div>
@@ -294,20 +332,18 @@
         </div>
       </section>
       <footer>
-        <div>
-          <img
-            src="assets/bolts and beams logo.png"
-            alt="b-and-b-logo"
-            class="logo"
-          />
-        </div>
-        <div class="c-flink-wrapper">
+        <div style="display: flex; flex-direction: column; gap: 30px">
+          <div>
+            <img
+              src="assets/bolts and beams logo.png"
+              alt="b-and-b-logo"
+              class="logo"
+            />
+          </div>
           <div class="c-wrapper">
             <div><span>[+234] 806 408 1239 </span></div>
             <div>
-              <a href="mailto:Boltsandbeams@gmail.com"
-                >Boltandbeams@gmail.com</a
-              >
+              <a href="mailto:Boltandbeams@gmail.com">Boltandbeams@gmail.com</a>
             </div>
           </div>
           <div class="socials">
@@ -364,34 +400,30 @@
                 </svg></div
             ></a>
           </div>
+        </div>
+
+        <div class="c-flink-wrapper">
           <div class="footer-links">
             <div class="flink">
               <h4>About Us</h4>
               <ul class="footer-list-wrapper">
-                <li href=""><a href="">Our Projects</a></li>
-                <li href=""><a href="">About Us</a></li>
-                <li href=""><a href="">How it works</a></li>
+                <li>
+                  <a href="projects.html">Our Projects</a>
+                </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">How it works</a></li>
               </ul>
             </div>
             <div class="flink">
               <h4>Services</h4>
               <ul class="footer-list-wrapper">
-                <li href="" style="white-space: nowrap">
-                  <a href="">Site Preparation</a>
+                <li style="white-space: nowrap">
+                  <a href="#designBuild">Design Build</a>
                 </li>
-                <li href="" style="white-space: nowrap">
-                  <a href="">Structural Engineering</a>
+                <li style="white-space: nowrap">
+                  <a href="#genContract">General Contracting</a>
                 </li>
-                <li href=""><a href="">Project Management</a></li>
-                <li href="" style="white-space: nowrap">
-                  <a href="">Design Consultation</a>
-                </li>
-                <li href="">
-                  <a href="">Electrical Engineering and Plumbing</a>
-                </li>
-                <li href="" style="white-space: nowrap">
-                  <a href="">Interior Design</a>
-                </li>
+                <li><a href="#renRemod">Renovations and Remodeling</a></li>
               </ul>
             </div>
           </div>
@@ -404,3 +436,8 @@
   </body>
 </html>
 <script src="script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>

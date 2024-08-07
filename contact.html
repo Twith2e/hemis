@@ -8,9 +8,10 @@
       href="assets/bolts and beams logo.png"
       type="image/x-icon"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Bolts and Beams | Contact Us</title>
+    <title>Bolt and Beams | Contact Us</title>
   </head>
   <body>
     <header>
@@ -22,20 +23,41 @@
             alt="b-and-b-logo"
           />
         </div>
-        <div class="menu-btn" id="menu-btn">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            x="0px"
-            y="0px"
-            width="40"
-            height="40"
-            viewBox="0 0 50 50"
-            fill="#fff"
-          >
-            <path
-              d="M 3 9 A 1.0001 1.0001 0 1 0 3 11 L 47 11 A 1.0001 1.0001 0 1 0 47 9 L 3 9 z M 3 24 A 1.0001 1.0001 0 1 0 3 26 L 47 26 A 1.0001 1.0001 0 1 0 47 24 L 3 24 z M 3 39 A 1.0001 1.0001 0 1 0 3 41 L 47 41 A 1.0001 1.0001 0 1 0 47 39 L 3 39 z"
-            ></path>
-          </svg>
+        <div class="nav-links">
+          <a class="nav-link" href="index.html">HOME</a>
+          <a class="nav-link" href="services.html">SERVICES</a>
+          <a class="nav-link" href="projects.html">PROJECTS</a>
+          <a class="nav-link" href="contact.html">CONTACT US</a>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+          "
+        >
+          <div class="contactUs-btn">
+            <button>
+              <a href="contact.html">Consult Now</a>
+            </button>
+          </div>
+          <div class="menu-btn" id="menu-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="40"
+              height="40"
+              viewBox="0 0 50 50"
+              fill="#fff"
+            >
+              <path
+                d="M 3 9 A 1.0001 1.0001 0 1 0 3 11 L 47 11 A 1.0001 1.0001 0 1 0 47 9 L 3 9 z M 3 24 A 1.0001 1.0001 0 1 0 3 26 L 47 26 A 1.0001 1.0001 0 1 0 47 24 L 3 24 z M 3 39 A 1.0001 1.0001 0 1 0 3 41 L 47 41 A 1.0001 1.0001 0 1 0 47 39 L 3 39 z"
+              ></path>
+            </svg>
+          </div>
         </div>
       </nav>
       <div class="sidebar" id="sidebar">
@@ -75,22 +97,19 @@
     <main>
       <section class="contact-section-one">
         <div class="cso-head">
-          <h4><a href="index.html">Let's Talk</a></h4>
+          <h4 class="services-head">Let's Talk</h4>
           <div class="cso-body">
-            <p id="backHome"><a href="index.html">Home</a></p>
-            <div></div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#fff"
-              >
-                <path
-                  d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"
-                />
-              </svg>
-            </div>
+            <a href="index.html">Home</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#fff"
+            >
+              <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+            </svg>
+
             <span>Contact Us</span>
           </div>
         </div>
@@ -98,8 +117,8 @@
       <section class="section-seven">
         <div class="sec-text-wrapper">
           <h1>Team. Tools. Safety. Solution</h1>
-          <p>
-            Bolts and Beams is a team of creative and practical problem solvers
+          <p class="pad">
+            Bolt and Beams is a team of creative and practical problem solvers
             with 20+ industry experience amongst them committed to providing
             industry-leading structural consulting services on projects of all
             sizes with the aid of industry standard tools. We take great pride
@@ -111,7 +130,7 @@
             to the OSHA standards.
           </p>
         </div>
-        <div class="secseven-grid">
+        <div class="secseven-grid" data-aos="fade-up" data-aos-duration="1000">
           <div class="contact">
             <div>
               <svg
@@ -166,7 +185,7 @@
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.7535652121214!2d7.456682224379028!3d9.086200138092288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0ac1f8f2b46d%3A0xc0e7b2c70ac48430!2sKingfem%20Group%20of%20Companies!5e0!3m2!1sen!2sng!4v1722085650889!5m2!1sen!2sng"
             width="100%"
-            height="300px"
+            height="500px"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
@@ -175,36 +194,56 @@
         </div>
       </section>
       <section class="contact-sect">
-        <div class="cs-head-wrapper">
-          <h3>Let's talk about your project</h3>
-          <p>
-            We've made it effortless for clients to connect with us and have
-            their solutions tailored.
-          </p>
-        </div>
-        <div>
-          <form action="https://formspree.io/f/xldrjgzn" method="POST">
-            <input
-              id="usersname"
-              name="Name"
-              placeholder="Your Name *"
-              type="text"
-            />
-            <input id="Mail" name="email" placeholder="Email *" type="email" />
-            <input
-              id="subject"
-              name="Subject"
-              placeholder="Subject *"
-              type="text"
-            />
-            <textarea
-              style="display: block"
-              id=""
-              name="Message"
-              placeholder="Message *"
-            ></textarea>
-            <button id="submitbtn">Submit</button>
-          </form>
+        <div class="form">
+          <div class="cs-head-wrapper">
+            <h3>Let's talk about your project</h3>
+            <p>
+              We've made it effortless for clients to connect with us and have
+              their solutions tailored.
+            </p>
+          </div>
+          <div>
+            <form action="https://formspree.io/f/xldrjgzn" method="POST">
+              <div class="contact-input user">
+                <input
+                  id="usersname"
+                  name="Name"
+                  placeholder="Your Name *"
+                  type="text"
+                />
+                <span id="error uNError"></span>
+              </div>
+              <div class="contact-input mail">
+                <input
+                  id="Mail"
+                  name="email"
+                  placeholder="Email *"
+                  type="email"
+                />
+                <span id="error eMError"></span>
+              </div>
+              <div class="contact-input subject">
+                <input
+                  id="subject"
+                  name="Subject"
+                  placeholder="Subject *"
+                  type="text"
+                />
+                <span id="error sError"></span>
+              </div>
+              <div class="contact-input message">
+                <textarea
+                  style="display: block"
+                  id="message"
+                  name="Message"
+                  placeholder="Message *"
+                ></textarea>
+                <span id="error mError"></span>
+              </div>
+
+              <button id="submitbtn">Submit</button>
+            </form>
+          </div>
         </div>
       </section>
       <footer>
@@ -227,30 +266,21 @@
             <div class="flink">
               <h4>About Us</h4>
               <ul class="footer-list-wrapper">
-                <li href=""><a href="">Our Projects</a></li>
-                <li href=""><a href="">About Us</a></li>
-                <li href=""><a href="">How it works</a></li>
+                <li><a href="projects.html">Our Projects</a></li>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="index.html">How it works</a></li>
               </ul>
             </div>
             <div class="flink">
               <h4>Services</h4>
               <ul class="footer-list-wrapper">
-                <li  style="white-space: nowrap">
-                  <a href="services.html">Site Preparation</a>
+                <li style="white-space: nowrap">
+                  <a href="services.html">Design Build</a>
                 </li>
-                <li  style="white-space: nowrap">
-                  <a href="services.html">Structural Engineering</a>
+                <li style="white-space: nowrap">
+                  <a href="services.html">General Contracting</a>
                 </li>
-                <li ><a href="services.html">Project Management</a></li>
-                <li  style="white-space: nowrap">
-                  <a href="services.html">Design Consultation</a>
-                </li>
-                <li >
-                  <a href="services.html">Electrical Engineering and Plumbing</a>
-                </li>
-                <li  style="white-space: nowrap">
-                  <a href="services.html">Interior Design</a>
-                </li>
+                <li><a href="services.html">Renovations and Remodeling</a></li>
               </ul>
             </div>
           </div>
@@ -263,3 +293,7 @@
   </body>
 </html>
 <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>

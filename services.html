@@ -8,9 +8,10 @@
       href="assets/bolts and beams logo.png"
       type="image/x-icon"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Bolts and Beams | Services</title>
+    <title>Bolt and Beams | Services</title>
   </head>
   <body>
     <header>
@@ -22,20 +23,41 @@
             alt="b-and-b-logo"
           />
         </div>
-        <div class="menu-btn" id="menu-btn">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            x="0px"
-            y="0px"
-            width="40"
-            height="40"
-            viewBox="0 0 50 50"
-            fill="#fff"
-          >
-            <path
-              d="M 3 9 A 1.0001 1.0001 0 1 0 3 11 L 47 11 A 1.0001 1.0001 0 1 0 47 9 L 3 9 z M 3 24 A 1.0001 1.0001 0 1 0 3 26 L 47 26 A 1.0001 1.0001 0 1 0 47 24 L 3 24 z M 3 39 A 1.0001 1.0001 0 1 0 3 41 L 47 41 A 1.0001 1.0001 0 1 0 47 39 L 3 39 z"
-            ></path>
-          </svg>
+        <div class="nav-links">
+          <a class="nav-link" href="index.html">HOME</a>
+          <a class="nav-link" href="services.html">SERVICES</a>
+          <a class="nav-link" href="projects.html">PROJECTS</a>
+          <a class="nav-link" href="contact.html">CONTACT US</a>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+          "
+        >
+          <div class="contactUs-btn">
+            <button>
+              <a href="contact.html">Consult Now</a>
+            </button>
+          </div>
+          <div class="menu-btn" id="menu-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="40"
+              height="40"
+              viewBox="0 0 50 50"
+              fill="#fff"
+            >
+              <path
+                d="M 3 9 A 1.0001 1.0001 0 1 0 3 11 L 47 11 A 1.0001 1.0001 0 1 0 47 9 L 3 9 z M 3 24 A 1.0001 1.0001 0 1 0 3 26 L 47 26 A 1.0001 1.0001 0 1 0 47 24 L 3 24 z M 3 39 A 1.0001 1.0001 0 1 0 3 41 L 47 41 A 1.0001 1.0001 0 1 0 47 39 L 3 39 z"
+              ></path>
+            </svg>
+          </div>
         </div>
       </nav>
       <div class="sidebar" id="sidebar">
@@ -75,12 +97,12 @@
     <main>
       <section class="contact-section-one">
         <div class="cso-head">
-          <h4>
+          <h4 class="services-head pad">
             We constantly try to improve our skills to serve you better. This is
             proof of our commitment to you because you deserve the best.
           </h4>
           <div class="cso-body">
-            <a href="index.html">Home</a>
+            <a id="backHome" href="index.html">Home</a>
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -104,172 +126,165 @@
             We offer various services to the construction industry, contractors,
             and owners.
           </h1>
-          <p>
-            As a full-service engineering company, Bolts and Beams's
-            capabilities and experienced professionals lead projects through all
-            process phases, from planning to completion and beyond.
+          <p class="pad">
+            As a full-service engineering company, Bolt and Beams's capabilities
+            and experienced professionals lead projects through all process
+            phases, from planning to completion and beyond.
           </p>
         </div>
-        <div class="secfour-grid" id="services">
-          <div class="banner">
-            <div>
+        <div class="secfour-grid">
+          <div
+            class="banner"
+            id="designBuild"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="banner-head">
               <img
                 height="60px"
                 width="60px"
                 src="assets/icons8-crane-24.png"
                 alt="crane"
               />
+              <h1>Design Build</h1>
             </div>
-            <h1>Site Preparation</h1>
             <p class="banner-paragraph">
-              Clearing and levelling for building construction
+              We offer integrated planning, innovative design, and seamless
+              construction. Our efficient solutions ensure projects run smoothly
+              from concept to completion
             </p>
-            <a class="banner-link" href="">Learn More</a>
+            <a class="banner-link" href="services.html">Learn More</a>
           </div>
-          <div class="banner">
-            <div>
+          <div
+            class="banner"
+            id="genContract"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="banner-head">
               <img
                 height="60px"
                 width="60px"
                 src="assets/icons8-architechture-24.png"
                 alt="archi"
               />
+              <h1>General Contracting</h1>
             </div>
-            <h1>Structural Work</h1>
-            <p class="banner-paragraph">Residential and commercial buildings</p>
-            <a href="" class="banner-link">Learn More</a>
-          </div>
-          <div class="banner">
-            <div>
-              <img src="assets/icons8-project-management-60.png" alt="pmt" />
-            </div>
-            <h1>Project Management</h1>
-            <p class="banner-paragraph">Homes, offices, and hotels</p>
-            <a href="" class="banner-link">Learn More</a>
-          </div>
-          <div class="banner">
-            <div>
-              <img src="assets/" alt="Structural Audit and Documentation" />
-            </div>
-            <h1>Design Consultation</h1>
-            <p class="banner-paragraph">Homes, offices, and hotels</p>
-            <a href="" class="banner-link">Learn More</a>
-          </div>
-          <div class="banner">
-            <div>
-              <img src="assets/icons8-disconnected-60.png" alt="socket" />
-            </div>
-            <h1>Electrical and Plumbing</h1>
             <p class="banner-paragraph">
-              Installation, repair, and maintenance
+              Comprehensive management from start to finish. Ensuring projects
+              are completed on time and within budget.
             </p>
-            <a href="" class="banner-link">Learn More</a>
+            <a href="services.html" class="banner-link">Learn More</a>
           </div>
-          <div class="banner">
-            <div><img src="assets/icons8-living-room-60.png" alt="" /></div>
-            <h1>Interior Design</h1>
-            <p class="banner-paragraph" style="width: 70%; margin: auto">
-              Homes, offices, and hotels
+          <div
+            class="banner"
+            id="renRemod"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="banner-head">
+              <img src="assets/icons8-disconnected-60.png" alt="socket" />
+              <h1>Renovations and Remodeling</h1>
+            </div>
+            <p class="banner-paragraph">
+              We transform spaces with innovative designs, ensuring
+              functionality and style. Our team revitalizes interiors, creating
+              environments that inspire.
             </p>
-            <a href="" class="banner-link">Learn More</a>
+            <a href="services.html" class="banner-link">Learn More</a>
           </div>
         </div>
-        <div class="secseven-grid">
-          <div class="contact">
+        <div class="contactMerge">
+          <div class="secseven-grid s-secseven-grid">
+            <div class="contact" data-aos="fade-up" data-aos-duration="1000">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="60"
+                  viewBox="0 -960 960 960"
+                  width="60"
+                  fill="#030e22"
+                >
+                  <path
+                    d="m600-120-240-84-186 72q-20 8-37-4.5T120-170v-560q0-13 7.5-23t20.5-15l212-72 240 84 186-72q20-8 37 4.5t17 33.5v560q0 13-7.5 23T812-192l-212 72Zm-40-98v-468l-160-56v468l160 56Zm80 0 120-40v-474l-120 46v468Zm-440-10 120-46v-468l-120 40v474Zm440-458v468-468Zm-320-56v468-468Z"
+                  />
+                </svg>
+              </div>
+              <div class="sub-contact">
+                <h4>Address</h4>
+                <span>Suite 3011, Kingfem Plaza, GA247, Mabushi, Abuja</span>
+              </div>
+            </div>
+            <div class="contact" data-aos="fade-up" data-aos-duration="1000">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="60"
+                  viewBox="0 -960 960 960"
+                  width="60"
+                  fill="#030e22"
+                >
+                  <path
+                    d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
+                  />
+                </svg>
+              </div>
+              <div class="sub-contact">
+                <h4>Call Us</h4>
+                <p>+234 806 408 1239</p>
+              </div>
+            </div>
+            <div class="contact" data-aos="fade-up" data-aos-duration="1000">
+              <div>
+                <img src="assets/icons8-open-mail-60.png" alt="open-mail" />
+              </div>
+              <div class="sub-contact">
+                <h4>Help Desk</h4>
+                <p>Boltandbeams@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <section class="contact-sect">
+            <div class="cs-head-wrapper">
+              <h3>Let's talk about your project</h3>
+              <p>
+                We've made it effortless for clients to connect with us and have
+                their solutions tailored.
+              </p>
+            </div>
             <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="60"
-                viewBox="0 -960 960 960"
-                width="60"
-                fill="#030e22"
-              >
-                <path
-                  d="m600-120-240-84-186 72q-20 8-37-4.5T120-170v-560q0-13 7.5-23t20.5-15l212-72 240 84 186-72q20-8 37 4.5t17 33.5v560q0 13-7.5 23T812-192l-212 72Zm-40-98v-468l-160-56v468l160 56Zm80 0 120-40v-474l-120 46v468Zm-440-10 120-46v-468l-120 40v474Zm440-458v468-468Zm-320-56v468-468Z"
+              <form action="https://formspree.io/f/xldrjgzn" method="POST">
+                <input
+                  id="usersname"
+                  name="Name"
+                  placeholder="Your Name *"
+                  type="text"
                 />
-              </svg>
-            </div>
-            <div class="sub-contact">
-              <h4>Address</h4>
-              <span>Suite 3011, Kingfem Plaza, GA247, Mabushi, Abuja</span>
-            </div>
-          </div>
-          <div class="contact">
-            <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="60"
-                viewBox="0 -960 960 960"
-                width="60"
-                fill="#030e22"
-              >
-                <path
-                  d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
+                <input
+                  id="Mail"
+                  name="email"
+                  placeholder="Email *"
+                  type="email"
                 />
-              </svg>
+                <input
+                  id="subject"
+                  name="Subject"
+                  placeholder="Subject *"
+                  type="text"
+                />
+                <textarea
+                  style="display: block"
+                  id=""
+                  name="Message"
+                  placeholder="Message *"
+                ></textarea>
+                <button id="submitbtn">Submit</button>
+              </form>
             </div>
-            <div class="sub-contact">
-              <h4>Call Us</h4>
-              <p>+234 806 408 1239</p>
-            </div>
-          </div>
-          <div class="contact">
-            <div>
-              <img src="assets/icons8-open-mail-60.png" alt="open-mail" />
-            </div>
-            <div class="sub-contact">
-              <h4>Help Desk</h4>
-              <p>Boltandbeams@gmail.com</p>
-            </div>
-          </div>
+          </section>
         </div>
       </section>
-      <section class="maps-section">
-        <div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.7535652121214!2d7.456682224379028!3d9.086200138092288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0ac1f8f2b46d%3A0xc0e7b2c70ac48430!2sKingfem%20Group%20of%20Companies!5e0!3m2!1sen!2sng!4v1722085650889!5m2!1sen!2sng"
-            width="100%"
-            height="300px"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </section>
-      <section class="contact-sect">
-        <div class="cs-head-wrapper">
-          <h3>Let's talk about your project</h3>
-          <p>
-            We've made it effortless for clients to connect with us and have
-            their solutions tailored.
-          </p>
-        </div>
-        <div>
-          <form action="https://formspree.io/f/xldrjgzn" method="POST">
-            <input
-              id="usersname"
-              name="Name"
-              placeholder="Your Name *"
-              type="text"
-            />
-            <input id="Mail" name="email" placeholder="Email *" type="email" />
-            <input
-              id="subject"
-              name="Subject"
-              placeholder="Subject *"
-              type="text"
-            />
-            <textarea
-              style="display: block"
-              id=""
-              name="Message"
-              placeholder="Message *"
-            ></textarea>
-            <button id="submitbtn">Submit</button>
-          </form>
-        </div>
-      </section>
+
       <footer>
         <div>
           <img
@@ -290,31 +305,21 @@
             <div class="flink">
               <h4>About Us</h4>
               <ul class="footer-list-wrapper">
-                <li href=""><a href="">Our Projects</a></li>
-                <li href=""><a href="">About Us</a></li>
-                <li href=""><a href="">How it works</a></li>
-                <li href=""><a href="">Publications</a></li>
+                <li><a href="projects.html">Our Projects</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">How it works</a></li>
               </ul>
             </div>
             <div class="flink">
               <h4>Services</h4>
               <ul class="footer-list-wrapper">
                 <li style="white-space: nowrap">
-                  <a href="#services">Site Preparation</a>
+                  <a href="#designBuild">Design Build</a>
                 </li>
                 <li style="white-space: nowrap">
-                  <a href="#services">Structural Engineering</a>
+                  <a href="#genContract">General Contracting</a>
                 </li>
-                <li><a href="#services">Project Management</a></li>
-                <li style="white-space: nowrap">
-                  <a href="#services">Design Consultation</a>
-                </li>
-                <li>
-                  <a href="#services">Electrical Engineering and Plumbing</a>
-                </li>
-                <li style="white-space: nowrap">
-                  <a href="#services">Interior Design</a>
-                </li>
+                <li><a href="#renRemod">Renovations and Remodeling</a></li>
               </ul>
             </div>
           </div>
@@ -327,3 +332,7 @@
   </body>
 </html>
 <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
