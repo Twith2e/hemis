@@ -5,6 +5,7 @@ const webLogo = document.getElementById("logo");
 const slides = document.querySelectorAll(".slide");
 const carousel = document.querySelector(".carousel-slide");
 let currentIndex = 0;
+let isScrollVisible = false;
 
 webLogo.addEventListener("click", () => {
   location.replace("index.html");
@@ -27,11 +28,18 @@ window.addEventListener("scroll", () => {
     navToTop.style.visibility = "hidden";
   } else {
     navToTop.style.visibility = "visible";
-    console.log("Scrolling up");
+    isScrollVisible = true;
   }
 
   lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
 });
+
+if (isScrollVisible) {
+  isScrollVisible = false; // Set to false immediately to prevent retriggering
+  setTimeout(() => {
+    navToTop.style.visibility = "hidden";
+  }, 2000);
+}
 
 navToTop.addEventListener("click", () => {
   window.scrollTo({
@@ -57,5 +65,4 @@ function updateCarousel() {
   });
 }
 
-// Initial setup
 updateCarousel();
