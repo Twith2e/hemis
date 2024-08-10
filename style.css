@@ -22,6 +22,10 @@ p {
   line-height: 40px;
 }
 
+footer a[target="_blank"] {
+  font-size: 14px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -171,7 +175,9 @@ footer {
 }
 
 .section-one {
-  background-image: url(assets/building.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    url("assets/building.jpg") no-repeat center center/cover;
+
   height: 500px;
   padding: 0;
   width: 100%;
@@ -201,19 +207,21 @@ footer {
 }
 
 .slide h2 {
+  /* color: #1f3a6b; */
   font-family: muli;
-  font-size: 20px;
+  font-size: 35px;
 }
 
 .slide p {
+  color: #fff;
+  font-family: muli;
   font-size: 14px;
-  /* width: 40%; */
 }
 
-.carousel-slide .secone-btn-wrapper {
+.carousel-slide,
+.secone-btn-wrapper {
   align-items: center;
   display: flex;
-  /* justify-content: center; */
   margin-top: 20px;
 }
 
@@ -420,6 +428,13 @@ footer {
   justify-content: space-between;
 }
 
+.ff-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px;
+}
+
 .footer-list-wrapper {
   display: flex;
   flex-direction: column;
@@ -443,14 +458,14 @@ footer a:hover {
 }
 
 .flink {
-  align-items: center;
-  padding-inline: 20px;
+  padding-inline: 10px;
+  width: 100%;
 }
 
 .socials {
   align-items: center;
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 .social svg:hover {
@@ -516,6 +531,12 @@ footer a:hover {
   line-height: 60px;
 }
 
+.contactMerge {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .about {
   display: flex;
   flex-direction: column;
@@ -550,8 +571,33 @@ footer a:hover {
     padding-inline: 15%;
   }
 
+  p,
+  span,
+  .cso-body a {
+    font-size: 24px;
+  }
+
+  a {
+    font-size: 18px;
+  }
+
+  .contact {
+    margin-top: 30px;
+  }
+
+  svg {
+    height: 30px;
+    width: 30px;
+  }
+
+  footer svg {
+    height: 50px;
+    width: 50px;
+  }
+
   section,
   footer {
+    font-size: 24px;
     padding-inline: 60px;
   }
 
@@ -584,6 +630,10 @@ footer a:hover {
   footer {
     justify-content: space-between;
     padding-block: 100px;
+  }
+
+  .contactUs-btn {
+    display: flex;
   }
 
   .sec-text-wrapper {
@@ -620,6 +670,10 @@ footer a:hover {
     height: 60px;
     width: 60px;
   }
+
+  .ap-grid-img {
+    height: 500px;
+  }
 }
 
 @media (min-width: 1056px) {
@@ -635,6 +689,10 @@ footer a:hover {
     font-size: 18px;
   }
 
+  .contactUs-btn {
+    display: flex;
+  }
+
   .contact img,
   .contact svg {
     height: 60px;
@@ -646,7 +704,7 @@ footer a:hover {
   }
 
   .pad {
-    padding-inline: 20%;
+    padding-inline: 15%;
   }
 
   .sec-text-wrapper {
@@ -709,11 +767,6 @@ footer a:hover {
     padding-inline: 30px;
   }
 
-  footer {
-    padding-block: 30px;
-    padding-inline: 15%;
-  }
-
   .services-head {
     font-size: 30px;
     line-height: 40px;
@@ -740,5 +793,16 @@ footer a:hover {
 
   .about {
     text-align: center;
+  }
+
+  .c-flink-wrapper,
+  footer {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  footer {
+    justify-content: space-between;
+    padding: 100px 15%;
   }
 }
